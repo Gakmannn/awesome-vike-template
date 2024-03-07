@@ -1,5 +1,7 @@
 // Place SASS variable overrides here
 // https://vuetifyjs.com/features/sass-variables/
 
-@use 'vuetify/styles';
+// @use 'vuetify/styles';
 //@use 'vuetify/lib/styles';
+@use 'vuetify' with ($color-pack: false,
+);

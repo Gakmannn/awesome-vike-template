@@ -7,7 +7,7 @@ module.exports = {
     increment_var: 'PORT',
     env: {
       HOST: '127.0.0.1',
-      PORT: 3003,
+      PORT: 3000,
       NODE_ENV: 'production'
     }
   }]

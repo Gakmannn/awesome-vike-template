@@ -15,9 +15,9 @@ import express from 'express'
 import compression from 'compression'
 import * as dotenv from 'dotenv' // see https://github.com/motdotla/dotenv#how-do-i-use-dotenv-with-import
 import { renderPage } from 'vike/server'
-import { root } from './root.js'
+// import { root } from './root.js'
 import httpDevServer from "vavite/http-dev-server"
-import { Readable } from 'stream'
+// import { Readable } from 'stream'
 
 dotenv.config()
 const isProduction = process.env.NODE_ENV === 'production'
@@ -34,7 +34,7 @@ async function startServer() {
   // Vavite integration
   if (!httpDevServer) {
     const sirv = (await import('sirv')).default
-    app.use(sirv(`${root}/dist/client`))
+    app.use(sirv(`dist/client`))
   } 
 
   // ...

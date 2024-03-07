@@ -12,6 +12,14 @@ export default createVuetify({
   ssr: true,
   theme: {
     variations: false ,
+    defaultTheme: 'light',
+    themes: {
+      light: {
+        variables: {
+          'theme-overlay-multiplier':1,
+        }
+      }
+    }
   },
   icons: {
     defaultSet: 'mdi',
